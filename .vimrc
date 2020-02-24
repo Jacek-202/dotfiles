@@ -18,9 +18,20 @@ Plugin 'VundleVim/Vundle.vim'
 " Tmux navigator for vim H J K L
 Plugin 'christoomey/vim-tmux-navigator'
 
+" support for languages
+Plugin 'sheerun/vim-polyglot'
+
+" plugin providing linting (syntax checking and semantic errors)
+Plugin 'dense-analysis/ale'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
-filetype plugin indent on    " required
+
+set nocompatible      " We're running Vim, not Vi!
+syntax on             " Enable syntax highlighting
+filetype on           " Enable filetype detection
+filetype indent on    " Enable filetype-specific indenting
+filetype plugin on    " Enable filetype-specific plugins
 
 " Brief help
 " " :PluginList       - lists configured plugins
