@@ -24,6 +24,10 @@ Plugin 'sheerun/vim-polyglot'
 " plugin providing linting (syntax checking and semantic errors)
 Plugin 'dense-analysis/ale'
 
+" plugin for fzf to vim
+Plugin 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plugin 'junegunn/fzf.vim'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 
