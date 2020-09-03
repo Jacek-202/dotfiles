@@ -28,6 +28,10 @@ Plugin 'dense-analysis/ale'
 Plugin 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plugin 'junegunn/fzf.vim'
 
+" Vim theme colors
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 
@@ -56,4 +60,8 @@ set softtabstop=2
 set shiftwidth=2
 " automatically rebalance windows on vim resize
 autocmd VimResized * :wincmd =
-
+" set vim theme colors
+let g:airline_theme='base16'
+colorscheme koehler 
+highlight ALEWarning ctermbg=Green
+highlight ALEError ctermbg=Green
