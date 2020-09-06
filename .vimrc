@@ -47,6 +47,13 @@ filetype plugin on    " Enable filetype-specific plugins
 " "
 " " see :h vundle for more details or wiki for FAQ
 " " Put your non-Plugin stuff after this line
+" show line number
+set number
+" change colotScheme
+set background=dark
+" show current file path
+set laststatus=2
+set statusline+=%F
 " On pressing tab, insert 2 spaces
 set expandtab
 " show existing tab with 2 spaces width
