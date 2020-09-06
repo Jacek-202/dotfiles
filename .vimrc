@@ -70,5 +70,7 @@ autocmd VimResized * :wincmd =
 " set vim theme colors
 let g:airline_theme='base16'
 colorscheme koehler 
-highlight ALEWarning ctermbg=Green
-highlight ALEError ctermbg=Green
+" highlight ALEWarning ctermbg=Green
+" highlight ALEError ctermbg=Green
+highlight ALEError ctermbg=none cterm=underline 
+highlight ALEWarning ctermbg=none cterm=underline
